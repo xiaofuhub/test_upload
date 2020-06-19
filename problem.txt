@@ -1,0 +1,11 @@
+Libgit2: How to not commit the resolved file after calling git_index_write to resolve the conflict?
+
+Here is my scenario: I want to resolve a conflict in my repository and, in the same time, I also want to let the user to be able to commit other files without having to commit the resolved file.
+I tried the following:
+1.       git status: 1.txt(conflict) 2.txt(modify)
+2.       git resolve: 1.txt(modify) //Used git add(git_index_write) to resolve the conflict
+3.       git commit 2.txt //Only commit 2.txt
+4.       git status: 1.txt(normal) 2.txt(normal)
+The result I am looking for is: git status: 1.txt(modify) 2.txt(normal)
+
+I know that the file status is managed by Index in libgit2. Index is modified by 1.txt, and it will be submitted by default when committing. But I want to submit only the file list I selected. Is there any way to achieve this? Thanks in advance for your help!
