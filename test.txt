@@ -1,6 +1,12 @@
 aaa
+<<<<<<< HEAD
 ttt
 11
 12344405
 15666
 //00000
+=======
+ttt00
+aa0ff
+ppp
+>>>>>>> 057e58defc3efa7bdec2d5d9fd96c85ca7b4c091
