@@ -31,6 +31,9 @@ on w_001.destroy
 destroy(this.r_1)
 end on
 
+event open;//test001
+end event
+
 type r_1 from rectangle within w_001
 long linecolor = 33554432
 integer linethickness = 4
